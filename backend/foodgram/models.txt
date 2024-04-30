@@ -1,0 +1,51 @@
+models: Recipe
+user_id ( autor_id )  integer
+title - charfield
+image - string !!!!
+description - textfield
+ингредиенты мнгие ко многим
+теги мнгие ко многим
+cooking_time  integer
+Все поля обязательны для заполнения.
+
+
+
+
+
+
+
+
+
+
+Models: Tag
+tittle string
+color_code  string
+slug slugfield
+Все поля обязательны для заполнения и уникальны.
+
+
+
+
+
+
+
+
+
+
+
+Models: ingredient
+рецепты многие ко многим
+title string
+count integer
+units string
+Все поля обязательны для заполнения.
+
+
+
+
+
+
+
+
+
+Models: Users
